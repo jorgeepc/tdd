@@ -1,0 +1,13 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "Test-Driven Development By Example",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
