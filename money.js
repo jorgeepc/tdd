@@ -4,9 +4,13 @@ class Money {
     this.currencyName = currency
   }
 
+  times(multiplier) {
+    return new Money(this.amount * multiplier, this.currencyName)
+  }
+
   equals(money) {
     return this.amount === money.amount
-      && this.constructor.name === money.constructor.name
+      && this.currency() === money.currency()
   }
 
   currency() {
