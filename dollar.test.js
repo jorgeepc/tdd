@@ -14,3 +14,8 @@ test('equality', () => {
   expect(new Franc(5).equals(new Franc(6))).toBeFalsy()
   expect(new Franc(5).equals(new Dollar(5))).toBeFalsy()
 })
+
+test('currency', () => {
+  expect(new Dollar(1).currency()).toEqual('USD')
+  expect(new Franc(1).currency()).toEqual('CHF')
+})
